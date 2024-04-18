@@ -1,0 +1,60 @@
+<ion-content fullscreen>
+  <div class="perfil-container">
+    <ion-row class="perfil-header" justify-content-center>
+      <ion-col size="10" class="ion-text-center">
+        <h1 class="perfil-title">Perfil</h1>
+      </ion-col>
+      <ion-col size="2" class="ion-text-center">
+        <ion-button (click)="eliminarDB()" fill="clear" color="danger" >
+          <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col size="12" class="ion-text-center">
+        <div class="center">
+          <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </div>
+      </ion-col>
+    </ion-row>
+    <!-- Avatar del usuario -->
+    
+    <!-- Nombre del usuario -->
+    <ion-row class="perfil-username" justify-content-center>
+      <ion-col size="auto">
+        <p>Nombre de Usuario</p>
+      </ion-col>
+    </ion-row>
+    <!-- IMEI del dispositivo -->
+    <ion-row class="perfil-imei" justify-content-center>
+  <ion-col size="auto">
+    <ion-item>
+      <ion-label>IMEI: {{ mostrarIMEI ? imei : '*********' }}</ion-label>
+      <ion-button (click)="toggleMostrarIMEI()" fill="clear">
+        <ion-icon slot="icon-only" [name]="mostrarIMEI ? 'eye-off' : 'eye'"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-col>
+</ion-row>
+    
+  </div>
+
+  <!-- Cuadro de historial -->
+  <div class="historial-container">
+    <ion-card>
+      <ion-card-header>
+        Historial
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item *ngFor="let block of blocks">
+            <ion-card>
+              <ion-card-content>
+                <p>{{ block.id }} - {{ block.data }} - {{ block.timestamp }}</p>
+              </ion-card-content>
+            </ion-card>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  
+</ion-content>

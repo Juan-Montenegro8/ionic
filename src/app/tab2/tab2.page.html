@@ -1,0 +1,30 @@
+
+
+<ion-content>
+
+  <div class="perfil-header" style="height: 10%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+    <div class="perfil-col" >
+      <h1 class="perfil-title">Notificaciones</h1>
+    </div>
+  </div>
+
+  <ion-list *ngIf="notificaciones.length > 0; else noNotificaciones">
+    <ion-item *ngFor="let notificacion of notificaciones">
+      <ion-label>{{ notificacion.titulo }}</ion-label>
+      <ion-note slot="end">{{ notificacion.fecha }}</ion-note>
+      <ion-buttons slot="end">
+        <ion-button (click)="aceptarNotificacion(notificacion)">Aceptar</ion-button>
+        <ion-button color="danger" (click)="cancelarNotificacion(notificacion)">Cancelar</ion-button>
+      </ion-buttons>
+    </ion-item>
+  </ion-list>
+  
+  <ng-template #noNotificaciones>
+    <ion-card>
+      <ion-card-content>
+        No hay notificaciones.
+      </ion-card-content>
+    </ion-card>
+  </ng-template>
+</ion-content>

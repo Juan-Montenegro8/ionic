@@ -1,0 +1,27 @@
+.back-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .back-title {
+    margin-left: 8px; /* Espacio entre el botón de regreso y el título */
+  }
+  
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .custom-input {
+    width: 90%;
+    margin-bottom: 16px; /* Espacio entre el input y el botón */
+  }
+  
+  .custom-button {
+    width: 60%;
+  }
+  

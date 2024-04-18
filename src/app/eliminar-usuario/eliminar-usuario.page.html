@@ -1,0 +1,26 @@
+
+
+<ion-content class="ion-padding" fullscreen>
+
+  <div class="back-container">
+    <ion-button class="back-button" (click)="tab()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-button>
+    <ion-title class="back-title">Eliminar Dispositivo</ion-title>
+  </div>
+
+
+  
+    <div class="container">
+      <ion-list class="custom-input">
+        <ion-item >
+          <ion-label position="floating" >IMEI del Dispositivo</ion-label>
+          <ion-input type="text" [(ngModel)]="imeiDispositivo" ></ion-input>
+        </ion-item>
+      </ion-list>
+      <ion-button expand="block" (click)="eliminarUsuario()" class="custom-button">Eliminar Dispositivo</ion-button>
+    </div>
+  
+  
+
+</ion-content>

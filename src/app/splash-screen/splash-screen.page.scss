@@ -1,0 +1,19 @@
+/* src/app/splash/splash.scss */
+/* src/app/splash/splash.scss */
+/* src/app/splash/splash.scss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.logo-container {
+  margin-bottom: 10px; /* Reducir el espacio entre el logo y el botón */
+}
+
+.button-container {
+  margin-top: 10px; /* Reducir el espacio entre el logo y el botón */
+}

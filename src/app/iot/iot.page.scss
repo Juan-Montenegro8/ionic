@@ -1,0 +1,24 @@
+.perfil-title {
+  margin-bottom: 0;
+  padding: 20px;
+}
+
+.perfil-col {
+  display: flex;
+  justify-content: flex-end; /* Alinea los elementos horizontalmente */
+  align-items: center; /* Alinea los elementos verticalmente */
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-button {
+  width: 200px;
+  height: 200px;
+  --border-radius: 50%;
+}
+
+

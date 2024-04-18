@@ -1,0 +1,13 @@
+{
+  "name": "dajo4",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://181.137.212.114:8081"
+    }
+  ]
+}

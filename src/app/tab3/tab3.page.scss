@@ -1,0 +1,57 @@
+.perfil-container {
+    text-align: center;
+    //padding: 20px;
+  }
+  
+  .perfil-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #005cc4; /* Color de fondo para el encabezado */
+    padding: 20px;
+    border-radius: 0px 0px 150px 0px; /* Añadimos bordes redondeados */
+    margin-bottom: 20px; /* Espaciado inferior */
+  }
+  
+  .perfil-title {
+    margin: 0;
+    text-align: left;
+  }
+
+  
+  
+  .center img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agregamos una sombra suave al avatar */
+    display: block; /* Aseguramos que la imagen se muestre como un bloque */
+    margin: 0 auto; /* Centramos la imagen horizontalmente */
+  }
+  
+  .perfil-username  {
+    margin: 1px 0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .perfil-imei {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .perfil-imei p {
+    margin-right: 10px;
+    justify-content: space-between;
+  }
+  
+  .historial-container {
+    margin-top: 20px;
+  }
+  
+
+

@@ -1,0 +1,42 @@
+<ion-content fullscreen>
+  <!-- Primera fila -->
+  <div class="perfil-header" style="height: 10%;">
+    <div class="perfil-col" style="text-align: flex-end;">
+      <h2 class="perfil-title">Estado: </h2>
+      <!-- Cambia el color del botón según la variable colorBoton -->
+      <ion-icon name="radio-button-on-outline" [color]="colorBoton"></ion-icon>
+    </div>
+  </div>
+
+  <!-- Segunda fila -->
+  <div class="perfil-circle"
+    style="height: 80%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <div>
+      <ion-button (click)="alternarFunciones()" class="circle-button" expand="full" shape="round" color=botonColor
+        style="width: 100px; height: 100px;">
+        <!-- Reemplaza el icono con una imagen -->
+
+        <img src="assets\img\botonEncendido.png" alt="Imagen">
+      </ion-button>
+    </div>
+    <div style="text-align: center; ; font-size: 18px;">{{ isOpen ? 'Abierto' : 'Cerrado' }}</div>
+  </div>
+
+
+  <!-- Tercera fila -->
+  <div class="button-add-user" style="height: 10%; display: flex; justify-content: flex-end; align-items: flex-end;">
+    <div style="margin-right: 10px;">
+      <ion-button (click)="agregarUsuario()" color="primary">
+        <!-- Agrega un icono dentro del botón para representar "Add User" -->
+        <ion-icon slot="icon-only" name="person-add"></ion-icon>
+      </ion-button>
+    </div>
+    <div>
+      <ion-button (click)="eliminarUsuario()" color="danger">
+        <!-- Agrega un icono dentro del botón para representar "Delete User" -->
+        <ion-icon slot="icon-only" name="trash"></ion-icon>
+      </ion-button>
+    </div>
+  </div>
+
+</ion-content>

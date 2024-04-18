@@ -1,0 +1,15 @@
+<ion-content class="ion-padding" fullscreen>
+  <div class="back-container">
+    <ion-button class="back-button" (click)="tab()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-button>
+    <ion-title class="back-title">Reinicio de Dispositivo</ion-title>
+  </div>
+
+  <div class="container">
+    <div class="mensaje ion-text-center">
+      <p>¿Está seguro de que desea reiniciar el dispositivo?</p>
+      <ion-button (click)="reiniciarDispositivo()" expand="block">Reiniciar</ion-button>
+    </div>
+  </div>
+</ion-content>

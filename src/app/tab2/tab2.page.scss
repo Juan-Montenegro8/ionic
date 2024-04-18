@@ -1,0 +1,31 @@
+/* Estilo para el título de la página */
+ion-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Estilo para la lista de notificaciones */
+  ion-list {
+    margin-top: 20px;
+  }
+  
+  /* Estilo para cada ítem de la lista de notificaciones */
+  ion-item {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Estilo para el título de la notificación */
+  ion-label {
+    font-weight: bold;
+  }
+  
+  /* Estilo para la fecha de la notificación */
+  ion-note {
+    font-size: 14px;
+  }
+  
+  /* Estilo para los botones de acción */
+  ion-button {
+    margin-left: 10px;
+  }
+  
